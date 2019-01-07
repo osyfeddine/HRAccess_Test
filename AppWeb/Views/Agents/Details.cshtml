@@ -1,0 +1,106 @@
+﻿@model Entities.Models.Agent
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Agent</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prenom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prenom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CIN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CIN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sexe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sexe)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateNaissance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateNaissance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LieuNaissance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LieuNaissance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nationalite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nationalite)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SecondeNationalite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SecondeNationalite)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Matricule)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Matricule)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NbrEnfants)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NbrEnfants)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
