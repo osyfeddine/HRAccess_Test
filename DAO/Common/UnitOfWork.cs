@@ -23,7 +23,7 @@ namespace DAO.Common
         /// <param name="context">The object context</param>
         public UnitOfWork(DbContext context)
         {
-
+             //Initialisation du context pour l'acces au base de donnees.
             _dbContext = context;
         }
 
